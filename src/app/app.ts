@@ -30,7 +30,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
   // Doing so will allow Angular to attach our behavior to an element
   directives: [ CORE_DIRECTIVES, FORM_DIRECTIVES, ROUTER_DIRECTIVES ],
   // Our list of styles in our component. We may add more to compose many styles together
-  styles: [require("!raw!sass!./app.scss")],
+  styles: [require('!raw!sass!./app.scss')],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
   template: require('./app.html')
 })
@@ -38,6 +38,7 @@ export class App {
   // These are member type
   title: string;
   data: Array<any> = []; // default data
+
   // TypeScript public modifiers
   constructor(public http: Http) {
     this.title = 'Angular 2';
