@@ -19,6 +19,9 @@
 
 > If you're looking for Angular 1.x please use [NG6-starter](https://github.com/angularclass/NG6-starter)
 
+This is a more opinionated fork of the Angular class starter kit, which uses html templates, SASS, and runs the app
+in a web worker. 
+
 This seed repo serves as an Angular 2 starter for anyone looking to get up and running with Angular 2 and TypeScript fast. Using a [Webpack](http://webpack.github.io/) for building our files and assisting with boilerplate. We're also using Protractor for our end-to-end story and Karma for our unit tests.
 * Best practices in file and application organization for Angular 2.
 * Ready to go build system using Webpack for working with TypeScript.

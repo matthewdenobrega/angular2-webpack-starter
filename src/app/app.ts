@@ -16,6 +16,7 @@ import {Http, Headers} from 'angular2/http';
  * Angular Directives
  */
 import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {TestService} from './TestService';
 
 /*
  * App Component
@@ -40,11 +41,12 @@ export class App {
   data: Array<any> = []; // default data
 
   // TypeScript public modifiers
-  constructor(public http: Http) {
+  constructor(public http: Http, public testService: TestService) {
     this.title = 'Angular 2';
   }
 
   onInit() {
+    this.testService.test('123');
     // Our API
     // Before you start the app, run these commands in another process:
     //
