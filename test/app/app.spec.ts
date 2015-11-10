@@ -2,7 +2,7 @@
 
 import {it, describe, expect, inject, injectAsync, beforeEachProviders, TestComponentBuilder} from 'angular2/testing';
 import {provide} from 'angular2/angular2';
-import {Http, Headers, ConnectionBackend, RequestOptions} from 'angular2/http';
+import {Http} from 'angular2/http';
 import {App} from '../../src/app/app';
 import {TestService} from '../../src/app/TestService';
 
