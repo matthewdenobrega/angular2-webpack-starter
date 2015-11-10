@@ -66,11 +66,11 @@ module.exports = {
       'angular2/router',
       'angular2/http'
     ],
-    'app-ui': [
-      './src/app/app-ui'
+    'client': [
+      './src/app/client/client'
     ],
-    'app-worker': [
-      './src/app/app-worker'
+    'cms': [
+      './src/app/cms/cms'
     ]
   },
 
@@ -140,8 +140,8 @@ module.exports = {
       'VERSION': JSON.stringify(pkg.version)
     }),
     new OccurenceOrderPlugin(),
-    new DedupePlugin(),
-    /*new CommonsChunkPlugin({
+    new DedupePlugin()/*,
+    new CommonsChunkPlugin({
       name: 'angular2',
       minChunks: Infinity,
       filename: 'angular2.js'
