@@ -140,7 +140,7 @@ module.exports = {
       'VERSION': JSON.stringify(pkg.version)
     }),
     new OccurenceOrderPlugin(),
-    new DedupePlugin()/*,
+    new DedupePlugin(),
     new CommonsChunkPlugin({
       name: 'angular2',
       minChunks: Infinity,
@@ -149,7 +149,7 @@ module.exports = {
     new CommonsChunkPlugin({
       name: 'common',
       filename: 'common.js'
-    })*/
+    })
   ],
 
   /*
